@@ -1,0 +1,10 @@
+file_format: "1"
+id: qh42
+name: QH42
+type: shield
+url: https://github.com/jsenjobs/zmk-config-trackpoint
+features:
+  - keys
+siblings:
+  - qhws42v3_left
+  - qhws42v3_right
