@@ -198,16 +198,14 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 #endif
     };
 
-    input_config: input_config {
-      compatible = "zmk,input-configs";
+    mouse_ps2_input_listener: mouse_ps2_input_listener {
+        compatible = "zmk,input-listener";
       status = "disabled";
 
-      mouse_ps2_config: mouse_ps2_config {
         device = <&mouse_ps2>;
 
 		// Some of the available settings depend on the keymap. So they
 		// are adjusted in...
 		// ../../../includes/trackpoint.dtsi
-      };
     };
 };
