@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-    - name: infused-kim
-      url-base: https://github.com/infused-kim
+    # - name: infused-kim
+    #   url-base: https://github.com/infused-kim
     - name: jsenjobs
       url-base: https://github.com/jsenjobs
   projects:
