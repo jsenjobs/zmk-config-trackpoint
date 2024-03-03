@@ -6,9 +6,11 @@ manifest:
       url-base: https://github.com/urob
     - name: infused-kim
       url-base: https://github.com/infused-kim
+    - name: jsenjobs
+      url-base: https://github.com/jsenjobs
   projects:
-    - name: zmk
-      remote: infused-kim
+    - name: zmk-mouse
+      remote: jsenjobs
       revision: pr-testing/mouse_ps2_v2
       import: app/west.yml
   self:
