@@ -1,0 +1,182 @@
+[18:06:15.669] tio v2.7
+[18:06:15.669] Press ctrl-t q to quit
+[18:06:15.672] Connected
+[18:06:21.400] Disconnected
+[18:06:22.405] Warning: Could not open tty device (No such file or directory)
+[18:06:22.405] Waiting for tty device..
+[18:06:23.411] Connected
+[00:00:00.259,094] <inf> fs_nvs: 8 Sectors of 4096 bytes
+[00:00:00.259,094] <inf> fs_nvs: alloc wra: 0, f30
+[00:00:00.259,124] <inf> fs_nvs: data wra: 0, 118
+*** Booting Zephyr OS build fcdfe8e6baff ***
+[00:00:00.312,072] <inf> bt_hci_core: HW Platform: Nordic Semiconductor (0x0002)
+[00:00:00.312,103] <inf> bt_hci_core: HW Variant: nRF52x (0x0002)
+[00:00:00.312,133] <inf> bt_hci_core: Firmware: Standard Bluetooth controller (0x00) Version 3.5 Build 0
+[00:00:00.312,500] <inf> bt_hci_core: No ID address. App must call settings_load()
+[00:00:00.315,002] <inf> bt_hci_core: Identity: C6:CD:91:84:AC:D6 (random)
+[00:00:00.315,032] <inf> bt_hci_core: HCI: version 5.4 (0x0d) revision 0x0000, manufacturer 0x05f1
+[00:00:00.315,063] <inf> bt_hci_core: LMP: version 5.4 (0x0d) subver 0xffff
+[00:00:00.320,739] <wrn> usb_hid: Device data not found for cfg 0x20002e60
+[00:00:00.320,800] <wrn> usb_hid: Device is not configured
+[00:00:00.320,800] <err> zmk: FAILED TO SEND OVER USB: -11
+[00:00:00.320,831] <wrn> usb_hid: Device is not configured
+[00:00:00.320,831] <err> zmk: FAILED TO SEND OVER USB: -11
+[00:00:00.320,892] <inf> zmk: Endpoint changed: BLE:0
+[00:00:00.323,181] <inf> zmk: Welcome to ZMK!
+
+[00:00:00.323,852] <inf> usb_hid: Device suspended
+[00:00:00.323,974] <inf> zmk: Endpoint changed: USB
+[00:00:00.324,035] <wrn> zmk: Not sending, not connected to active profile
+[00:00:00.324,066] <wrn> zmk: Not sending, not connected to active profile
+[00:00:00.423,675] <inf> bas: BAS Notifications enabled
+[00:00:00.423,889] <inf> usb_hid: Device reset detected
+[00:00:00.423,919] <inf> usb_hid: Device resumed
+[00:00:00.563,262] <inf> usb_hid: Device configured
+[00:00:00.729,400] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xaa
+[00:00:00.729,431] <inf> ps2_gpio: Adding byte to data queue: 0xaa
+[00:00:00.730,316] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0x0
+[00:00:00.730,346] <inf> ps2_gpio: Adding byte to data queue: 0x0
+[00:00:01.038,604] <inf> bas: BAS Notifications disabled
+[00:00:01.145,294] <inf> bas: BAS Notifications enabled
+[00:00:01.310,363] <inf> zmk: Waiting for mouse to connect...
+[00:00:01.310,394] <inf> zmk: Trying to initialize mouse device (attempt 1 / 10)
+[00:00:01.310,394] <inf> zmk: PS/2 Device passed self-test: 0xaa
+[00:00:01.310,424] <inf> zmk: Reading PS/2 device id...
+[00:00:01.310,424] <inf> zmk: Connected PS/2 device is a mouse...
+[00:00:01.310,455] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.310,485] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0xe1
+[00:00:01.310,485] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0xe1
+[00:00:01.317,443] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0xe1
+[00:00:01.318,450] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.318,481] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0xe1 received response: 0xfa
+[00:00:01.318,511] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0xe1
+
+[00:00:01.319,366] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0x1
+[00:00:01.319,396] <inf> ps2_gpio: Adding byte to data queue: 0x1
+[00:00:01.320,312] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xe
+[00:00:01.320,312] <inf> ps2_gpio: Adding byte to data queue: 0xe
+[00:00:01.320,373] <inf> zmk: Device is a trackpoint
+[00:00:01.320,373] <inf> zmk: Setting TP sensitivity to 135...
+[00:00:01.320,434] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.320,434] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0xe2
+[00:00:01.320,465] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0xe2
+[00:00:01.322,509] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0xe2
+[00:00:01.323,516] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.323,547] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0xe2 received response: 0xfa
+[00:00:01.323,577] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0xe2
+
+[00:00:01.323,577] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.323,608] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0x81
+[00:00:01.323,638] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0x81
+[00:00:01.324,859] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0x81
+[00:00:01.325,836] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.325,866] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0x81 received response: 0xfa
+[00:00:01.325,897] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0x81
+
+[00:00:01.325,927] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.325,927] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0x4a
+[00:00:01.325,958] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0x4a
+[00:00:01.327,178] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0x4a
+[00:00:01.328,125] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.328,155] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0x4a received response: 0xfa
+[00:00:01.328,186] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0x4a
+
+[00:00:01.328,216] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.328,216] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0x87
+[00:00:01.328,247] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0x87
+[00:00:01.329,467] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0x87
+[00:00:01.330,413] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.330,474] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0x87 received response: 0xfa
+[00:00:01.330,474] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0x87
+
+[00:00:01.330,505] <inf> zmk: Successfully set TP sensitivity to 135
+[00:00:01.330,535] <inf> zmk: Setting TP inertia to 6...
+[00:00:01.330,566] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.330,596] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0xe2
+[00:00:01.330,596] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0xe2
+[00:00:01.332,519] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0xe2
+[00:00:01.333,526] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.333,557] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0xe2 received response: 0xfa
+[00:00:01.333,587] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0xe2
+
+[00:00:01.333,587] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.333,618] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0x81
+[00:00:01.333,648] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0x81
+[00:00:01.334,991] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0x81
+[00:00:01.335,968] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.336,029] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0x81 received response: 0xfa
+[00:00:01.336,029] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0x81
+
+[00:00:01.336,059] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.336,059] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0x4d
+[00:00:01.336,151] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0x4d
+[00:00:01.337,371] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0x4d
+[00:00:01.338,317] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.338,378] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0x4d received response: 0xfa
+[00:00:01.338,378] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0x4d
+
+[00:00:01.338,409] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.338,409] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0x6
+[00:00:01.338,439] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0x6
+[00:00:01.339,660] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0x6
+[00:00:01.340,606] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.340,667] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0x6 received response: 0xfa
+[00:00:01.340,667] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0x6
+
+[00:00:01.340,698] <inf> zmk: Successfully set TP negative inertia to 6
+[00:00:01.340,728] <inf> zmk: Setting TP value 6 upper speed plateau to 182...
+[00:00:01.340,759] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.340,789] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0xe2
+[00:00:01.340,789] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0xe2
+[00:00:01.342,529] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0xe2
+[00:00:01.343,536] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.343,566] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0xe2 received response: 0xfa
+[00:00:01.343,597] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0xe2
+
+[00:00:01.343,597] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.343,627] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0x81
+[00:00:01.343,658] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0x81
+[00:00:01.344,879] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0x81
+[00:00:01.345,855] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.345,886] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0x81 received response: 0xfa
+[00:00:01.345,916] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0x81
+
+[00:00:01.345,947] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.345,947] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0x60
+[00:00:01.345,977] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0x60
+[00:00:01.347,198] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0x60
+[00:00:01.348,144] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.348,175] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0x60 received response: 0xfa
+[00:00:01.348,205] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0x60
+
+[00:00:01.348,236] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.348,236] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0xb6
+[00:00:01.348,266] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0xb6
+[00:00:01.349,487] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0xb6
+[00:00:01.350,433] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.350,463] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0xb6 received response: 0xfa
+[00:00:01.350,494] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0xb6
+
+[00:00:01.350,524] <inf> zmk: Successfully set TP value6 upper plateau speed to 182
+[00:00:01.351,440] <inf> zmk: Enabling data reporting and ps2 callback...
+[00:00:01.351,440] <dbg> ps2_gpio: ps2_gpio_write_byte:
+
+[00:00:01.351,470] <dbg> ps2_gpio: ps2_gpio_write_byte: START WRITE: 0xf4
+[00:00:01.351,470] <dbg> ps2_gpio: ps2_gpio_write_byte_start: ps2_gpio_write_byte_start called with byte=0xf4
+[00:00:01.353,363] <dbg> ps2_gpio: ps2_gpio_write_finish: Successfully wrote value 0xf4
+[00:00:01.354,370] <dbg> ps2_gpio: ps2_gpio_read_process_received_byte: Successfully received value: 0xfa
+[00:00:01.354,431] <dbg> ps2_gpio: ps2_gpio_write_byte_await_response: Write for byte 0xf4 received response: 0xfa
+[00:00:01.354,431] <dbg> ps2_gpio: ps2_gpio_write_byte: END WRITE: 0xf4

@@ -1,0 +1,38 @@
+[00:00:01.324,829] <wrn> ps2_uart: Successfully wrote 0xff on try #4 of 5...
+[00:00:01.324,829] <dbg> ps2_uart: ps2_uart_write_byte: END WRITE: 0xff
+
+[00:00:01.324,859] <inf> zmk: Trying to initialize mouse device (attempt 2 / 10)
+[00:00:01.324,859] <wrn> zmk: Got invalid PS/2 self-test result: 0x0
+[00:00:01.324,890] <inf> zmk: Trying to reset PS2 device...
+[00:00:01.324,920] <dbg> ps2_uart: ps2_uart_write_byte:
+
+[00:00:01.324,920] <dbg> ps2_uart: ps2_uart_write_byte: Writing: 0xff
+[00:00:01.329,132] <err> ps2_uart: Failed to write value 0xff: scl timeout
+[00:00:01.329,162] <dbg> ps2_uart: ps2_uart_write_finish: END WRITE: 0xff
+
+[00:00:01.329,193] <err> ps2_uart: Blocking write finished with failure for byte 0xff status: 3
+[00:00:01.329,193] <wrn> ps2_uart: Attempting write re-try #2 of 5...
+[00:00:01.335,266] <err> ps2_uart: Blocking write failed due to semaphore timeout for byte 0xff: -11
+[00:00:01.335,296] <wrn> ps2_uart: Attempting write re-try #3 of 5...
+[00:00:01.339,477] <err> ps2_uart: Failed to write value 0xff: scl timeout
+[00:00:01.339,508] <dbg> ps2_uart: ps2_uart_write_finish: END WRITE: 0xff
+
+[00:00:01.339,538] <err> ps2_uart: Blocking write finished with failure for byte 0xff status: 3
+[00:00:01.339,538] <wrn> ps2_uart: Attempting write re-try #4 of 5...
+[00:00:01.345,520] <err> ps2_uart: Blocking write failed due to semaphore timeout for byte 0xff: -11
+[00:00:01.345,550] <wrn> ps2_uart: Attempting write re-try #5 of 5...
+[00:00:01.349,731] <err> ps2_uart: Failed to write value 0xff: scl timeout
+[00:00:01.349,761] <dbg> ps2_uart: ps2_uart_write_finish: END WRITE: 0xff
+
+[00:00:01.349,792] <err> ps2_uart: Blocking write finished with failure for byte 0xff status: 3
+[00:00:01.349,792] <dbg> ps2_uart: ps2_uart_write_byte: END WRITE: 0xff
+
+[00:00:01.349,853] <err> zmk: Could not send reset cmd
+[00:00:01.349,884] <inf> zmk: Trying to initialize mouse device (attempt 3 / 10)
+[00:00:01.381,561] <dbg> ps2_uart: ps2_uart_read_process_received_byte: UART Received: 0xfc
+[00:00:01.381,591] <wrn> ps2_uart: UART RX detected error for byte 0xfc: Framing error (4)
+[00:00:01.381,591] <dbg> ps2_uart: ps2_uart_read_process_received_byte: Received byte: 0xfc
+[00:00:01.381,622] <inf> ps2_uart: Adding byte to data queue: 0xfc
+[00:00:01.381,652] <wrn> zmk: Got invalid PS/2 self-test result: 0xfc
+[00:00:01.381,652] <inf> zmk: Trying to reset PS2 device...
+[00:00:01.381,683] <dbg> ps2_uart: ps2_uart_write_byte:
