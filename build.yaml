@@ -13,7 +13,5 @@
 #
 ---
 include:
-  - board: qhws42v3_nrf52840_r
+  - board: jice_nano_v2
     shield: "qhws42v3_right"
-  - board: qhws42v3_nrf52840_r
-    shield: "settings_reset"
