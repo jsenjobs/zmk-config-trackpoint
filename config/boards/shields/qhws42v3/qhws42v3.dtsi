@@ -36,6 +36,10 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 	};
 };
 
+&pro_micro_i2c {
+    status = "disabled";
+};
+
 
 /*
  * PS/2 Mouse / Trackpoint
@@ -55,13 +59,8 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 
 
 
-#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&gpio0 24 GPIO_ACTIVE_HIGH>
-#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&gpio0 13 GPIO_ACTIVE_HIGH>
-
-// #define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 20 GPIO_ACTIVE_HIGH>
-// #define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 18 GPIO_ACTIVE_HIGH>
-// #define MOUSE_PS2_PIN_SCL_PRO_MICRO <&gpio0 29 GPIO_ACTIVE_HIGH>
-// #define MOUSE_PS2_PIN_SDA_PRO_MICRO <&gpio1 15 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&gpio0 13 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&gpio0 24 GPIO_ACTIVE_HIGH>
 
 // Uncomment and configure this pin if you have an extra free pin and want the
 // controller to perform the Power-On-Reset sequence, which many trackpoints
@@ -86,8 +85,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 // We don't define the SCL pin, because UART uses a baud rate instead of
 // a clock pin.
 // #define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 8)>
-#define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 13)>
-// #define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 1, 15)>
+#define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 24)>
 
 // In UART two different pins are used for receiving and transmitting, but PS/2
 // uses the same pin for both.
