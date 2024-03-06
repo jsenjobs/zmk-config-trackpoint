@@ -23,6 +23,7 @@
         compatible = "gpio-leds";
         blue_led: led_0 {
             gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
+            label = "Blue LED";
         };
     };
 };
@@ -62,6 +63,7 @@
     status = "okay";
     cdc_acm_uart: cdc_acm_uart {
         compatible = "zephyr,cdc-acm-uart";
+        label = "CDC_ACM_0";
     };
 };
 
@@ -77,10 +79,12 @@
         #size-cells = <1>;
 
         sd_partition: partition@0 {
-            reg = <0x00000000 0x00026000>;
+            label = "softdevice";
+            reg = <0x00000000 0x00027000>;
         };
         code_partition: partition@26000 {
-            reg = <0x00026000 0x000c6000>;
+            label = "code_partition";
+            reg = <0x00027000 0x000c6000>;
         };
 
         /*
