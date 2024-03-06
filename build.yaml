@@ -14,4 +14,6 @@
 ---
 include:
   - board: qhws42v3_nrf52840_r
-    shield: ["qhws42v3_right", "settings_reset"]
+    shield: "qhws42v3_right"
+  - board: qhws42v3_nrf52840_r
+    shield: "settings_reset"
