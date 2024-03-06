@@ -59,8 +59,8 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 
 
 
-#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&gpio0 13 GPIO_ACTIVE_HIGH>
-#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&gpio0 24 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&gpio0 24 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&gpio0 13 GPIO_ACTIVE_HIGH>
 
 // Uncomment and configure this pin if you have an extra free pin and want the
 // controller to perform the Power-On-Reset sequence, which many trackpoints
@@ -85,7 +85,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 // We don't define the SCL pin, because UART uses a baud rate instead of
 // a clock pin.
 // #define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 8)>
-#define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 24)>
+#define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 13)>
 
 // In UART two different pins are used for receiving and transmitting, but PS/2
 // uses the same pin for both.
@@ -178,7 +178,11 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 	// 1 / BAUD * 1000000 = CYCLE_LEN (in microseconds)
 	// 1 / 14400 * 1000000 = 69.44
 	//
-	current-speed = <14400>;
+	current-speed = <9600>;
+	// current-speed = <14400>;
+	// current-speed = <19200>;
+	// current-speed = <921600>;
+	// current-speed = <1000000>;
 	pinctrl-0 = <&uart0_ps2_default>;
 	pinctrl-1 = <&uart0_ps2_off>;
 
