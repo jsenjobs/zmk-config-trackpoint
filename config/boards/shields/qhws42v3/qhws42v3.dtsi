@@ -178,8 +178,8 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 	// 1 / BAUD * 1000000 = CYCLE_LEN (in microseconds)
 	// 1 / 14400 * 1000000 = 69.44
 	//
-	// current-speed = <14400>;
-	current-speed = <9600>;
+	current-speed = <14400>;
+	// current-speed = <9600>;
 	pinctrl-0 = <&uart0_ps2_default>;
 	pinctrl-1 = <&uart0_ps2_off>;
 
