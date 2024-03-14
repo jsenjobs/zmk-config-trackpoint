@@ -1,0 +1,24 @@
+[00:00:07.819,976] <dbg> ps2_uart: ps2_uart_write_byte: Writing: 0xe2
+[00:00:07.821,807] <dbg> ps2_uart: ps2_uart_write_finish: Successfully wrote value 0xe2
+[00:00:07.821,838] <dbg> ps2_uart: ps2_uart_write_finish: END WRITE: 0xe2
+
+[00:00:07.822,814] <dbg> ps2_uart: ps2_uart_read_process_received_byte: UART Received: 0xfa
+[00:00:07.822,845] <dbg> ps2_uart: ps2_uart_read_process_received_byte: Received byte: 0xfa
+[00:00:07.822,875] <dbg> ps2_uart: ps2_uart_write_byte_await_response: Write for byte 0xe2 received response: 0xfa
+[00:00:07.822,875] <dbg> ps2_uart: ps2_uart_write_byte: END WRITE: 0xe2
+
+[00:00:07.822,906] <dbg> ps2_uart: ps2_uart_write_byte:
+
+[00:00:07.822,906] <dbg> ps2_uart: ps2_uart_write_byte: Writing: 0x25
+[00:00:07.824,798] <dbg> ps2_uart: ps2_uart_write_finish: Successfully wrote value 0x25
+[00:00:07.824,798] <dbg> ps2_uart: ps2_uart_write_finish: END WRITE: 0x25
+
+[00:00:07.825,744] <dbg> ps2_uart: ps2_uart_read_process_received_byte: UART Received: 0xfa
+[00:00:07.825,775] <dbg> ps2_uart: ps2_uart_read_process_received_byte: Received byte: 0xfa
+[00:00:07.825,805] <dbg> ps2_uart: ps2_uart_write_byte_await_response: Write for byte 0x25 received response: 0xfa
+[00:00:07.825,805] <dbg> ps2_uart: ps2_uart_write_byte: END WRITE: 0x25
+
+[00:00:07.826,690] <dbg> ps2_uart: ps2_uart_read_process_received_byte: UART Received: 0x18
+[00:00:07.826,690] <dbg> ps2_uart: ps2_uart_read_process_received_byte: Received byte: 0x18
+[00:00:07.826,721] <inf> ps2_uart: Adding byte to data queue: 0x18
+[00:00:07.826,782] <wrn> zmk: debug_status Power On Self Test results res: 24
