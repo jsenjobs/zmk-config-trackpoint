@@ -23,3 +23,5 @@ include:
     shield: "qhws42v3_left"
   - board: nice_nano_v2
     shield: "qhws42v3_left"
+  - board: jice_nano
+    shield: "qhws42v3_left"
