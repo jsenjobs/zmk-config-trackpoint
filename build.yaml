@@ -13,7 +13,7 @@
 #
 ---
 include:
-  - board: jice_nano_v2
-    shield: "qhws42v3_right"
-  - board: qhws42v3_nrf52840_r
+  - board: qhws42v3_nrf52840_left
+    shield: "qhws42v3_left"
+  - board: qhws42v3_nrf52840_right
     shield: "qhws42v3_right"
