@@ -12,4 +12,4 @@
 // #define HAS_CAPSLOCK
 
 /* source the main keymap */
-#include "base.keymap"
+#include "qh_base.keymap"
