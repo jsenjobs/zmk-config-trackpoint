@@ -81,7 +81,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LT2 LT3 LT4>;
-      layers = <BASE BASE_COLEMAK NAV BASE_DVORAK MOUSE_KEYS>;
+      layers = <BASE BASE_COLEMAK BASE_DVORAK MOUSE_KEYS>;
       bindings = <&tog MOUSE_SET>;
     };
 
