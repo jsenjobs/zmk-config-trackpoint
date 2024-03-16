@@ -12,5 +12,5 @@
 // #define HAS_CAPSLOCK
 
 /* source the main keymap */
-// #include "qh_base.keymap"
-#include "base.keymap"
+#include "qh_base.keymap"
+// #include "base.keymap"
