@@ -44,7 +44,7 @@
 // #include "includes/combos.dtsi"
 // #include "includes/behaviours_homerow_mods.dtsi"
 // #include "includes/behaviours_mod_morph.dtsi"
-// #include "includes/behaviours_other.dtsi"
+#include "includes/behaviours_other.dtsi"
 
 #include "includes/qh_conditional_layers_v2.dtsi"
 #include "includes/qh_combos_v2.dtsi"
