@@ -1,0 +1,24 @@
+#include <dt-bindings/zmk/outputs.h>
+
+#define TD_TAPPING_TERM 300
+
+/ {
+
+    behaviors {
+
+        /*
+        * Double Tap to clear BT
+        *
+        * Usage: &td_out_bt_clear
+        * Hold / Tap: Toggle output (USB or BT)
+        * Double Tap: Clear BT
+        */
+        td_out_bt_clear: td_out_bt_clear {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&out OUT_TOG>, <&bt BT_CLR>;
+        };
+
+    };
+};
