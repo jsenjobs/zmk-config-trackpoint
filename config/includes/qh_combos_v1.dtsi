@@ -1,0 +1,116 @@
+#define COMBO_TERM_FAST 35
+#define COMBO_TERM_SLOW 40
+#define COMBO_PRIOR_IDLE 100
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+
+        l_reset {
+            bindings = <&sys_reset>;
+            key-positions = <0 1 5>;
+        };
+
+        r_reset {
+            bindings = <&sys_reset>;
+            key-positions = <11 10 6>;
+        };
+
+        l_boot {
+            bindings = <&bootloader>;
+            key-positions = <0 1 17>;
+        };
+
+        r_boot {
+            bindings = <&bootloader>;
+            key-positions = <11 10 18>;
+        };
+
+        l_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <16 37>;
+        };
+
+        l_s_alt {
+            bindings = <&kp LG(LEFT_ALT)>;
+            key-positions = <15 37>;
+        };
+
+        l_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <14 37>;
+        };
+
+        l_ctrl_a {
+            bindings = <&kp LC(A)>;
+            key-positions = <13 37>;
+        };
+
+        r_alt {
+            bindings = <&kp RALT>;
+            key-positions = <19 40>;
+        };
+
+        r_s_alt {
+            bindings = <&kp RG(RIGHT_ALT)>;
+            key-positions = <40 20>;
+        };
+
+        r_ctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <21 40>;
+        };
+
+        r_ctrl_alt {
+            bindings = <&kp RA(RCTRL)>;
+            key-positions = <22 40>;
+        };
+
+        left_conf {
+            bindings = <&tog 6>;
+            key-positions = <1 0 38>;
+        };
+
+        right_conf {
+            bindings = <&tog 7>;
+            key-positions = <10 11 39>;
+        };
+
+#ifdef HAS_MOUSE_TP
+    combo_tog_mouse_settings_l {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <LT2 LT3 LT4>;
+      layers = <BASE BASE_COLEMAK BASE_DVORAK MOUSE_KEYS>;
+      bindings = <&tog MOUSE_SET>;
+    };
+
+    combo_tog_mouse_settings_r {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <RT2 RT3 RT4>;
+      layers = <BASE BASE_COLEMAK BASE_DVORAK MOUSE_KEYS>;
+      bindings = <&tog MOUSE_SET>;
+    };
+#endif
+
+#ifdef HAS_MOUSE_KEYS
+    combo_tog_mouse_keys_l {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <LM2 LM3 LM4>;
+      layers = <BASE BASE_COLEMAK BASE_DVORAK MOUSE_KEYS>;
+      bindings = <&tog MOUSE_KEYS>;
+    };
+
+    combo_tog_mouse_keys_r {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <RM2 RM3 RM4>;
+      layers = <BASE BASE_COLEMAK BASE_DVORAK MOUSE_KEYS>;
+      bindings = <&tog MOUSE_KEYS>;
+    };
+#endif
+
+  };
+};

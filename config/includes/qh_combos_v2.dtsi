@@ -1,0 +1,153 @@
+#define COMBO_TERM_FAST 35
+#define COMBO_TERM_SLOW 40
+#define COMBO_PRIOR_IDLE 100
+// todo base_layer
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+
+    alt_l {
+        timeout-ms = <COMBO_TERM_SLOW>;
+        key-positions = <LM1 LH1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings = <&kp LEFT_ALT>;
+    };
+
+    gui_alt_l {
+        timeout-ms = <COMBO_TERM_SLOW>;
+        key-positions = <LM2 LH1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings = <&kp LG(LEFT_ALT)>;
+    };
+
+    ctrl_l {
+        timeout-ms = <COMBO_TERM_SLOW>;
+        key-positions = <LM3 LH1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings = <&kp LCTRL>;
+    };
+
+    ctrl_a_l {
+        timeout-ms = <COMBO_TERM_SLOW>;
+        key-positions = <LM4 LH1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings = <&kp LC(A)>;
+    };
+
+    alt_r {
+        timeout-ms = <COMBO_TERM_SLOW>;
+        key-positions = <RM1 RH1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings = <&kp RALT>;
+    };
+
+    gui_alt_r {
+        timeout-ms = <COMBO_TERM_SLOW>;
+        key-positions = <RH1 RM2>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings = <&kp RG(RIGHT_ALT)>;
+    };
+
+    ctrl_r {
+        timeout-ms = <COMBO_TERM_SLOW>;
+        key-positions = <RM3 RH1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings = <&kp RCTRL>;
+    };
+
+    ctrl_alt_r {
+        timeout-ms = <COMBO_TERM_SLOW>;
+        key-positions = <RM4 RH1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings = <&kp RA(RCTRL)>;
+    };
+
+
+    combo_tog_sys_media_l {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <LT5 LT4 LH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog MOUSE_SET>;
+    };
+
+    combo_tog_sys_media_r {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <RT4 RT5 RH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog MOUSE_SET>;
+    };
+
+
+// 布局切换
+    base_qwerty_l {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <LT4 LT3 LT2 LH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog BASE_QWERTY>;
+    };
+
+    base_qwerty_r {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <RT2 RT3 RT4 RH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog BASE_QWERTY>;
+    };
+
+    base_colemak_l {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <LM4 LM3 LM2 LH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog BASE_COLEMAK>;
+    };
+
+    base_colemak_r {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <RM2 RM3 RM4 RH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog BASE_COLEMAK>;
+    };
+
+    base_dvorak_l {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <LB4 LB3 LB2 LH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog BASE_DVORAK>;
+    };
+
+    base_dvorak_r {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <RB2 RB3 RB4 RH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog BASE_DVORAK>;
+    };
+
+// 鼠标键相关设置layer tog
+#ifdef HAS_MOUSE_TP
+    combo_tog_mouse_settings_l {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <LB5 LB4 LB3 LH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog MOUSE_SET>;
+    };
+
+    combo_tog_mouse_settings_r {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <RB3 RB4 RB5 RH1>;
+      layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+      bindings = <&tog MOUSE_SET>;
+    };
+#endif
+
+  };
+};
