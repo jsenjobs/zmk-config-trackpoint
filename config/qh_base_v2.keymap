@@ -163,7 +163,7 @@
                 &trans              &trans      &trans      &trans      &trans          &trans              &trans          &trans          &trans          &trans              &trans          &trans
                 &tog MOUSE_TP       &trans      &mkp MCLK   &mkp RCLK   &mkp LCLK          &trans           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT     &trans       &trans
                 &tog MOUSE_TP       &trans      &trans      &trans      &trans          &trans              &trans          &trans          &trans          &trans              &trans          &tog MOUSE_TP
-                                                            &trans      &tog MOUSE_TP   &mkp RCLK           &mkp LCLK       &mkp MCLK       &trans
+                                                            &trans      &trans   &mkp RCLK           &mkp LCLK       &mkp MCLK       &trans
 
             >;
         };
