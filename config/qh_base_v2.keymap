@@ -106,7 +106,7 @@
             >;
         };
 
-#ifdef HAS_MOUSE_KEYS
+// #ifdef HAS_MOUSE_KEYS
         symbol {
             display-name = "SYMBOL";
             bindings = <
@@ -125,26 +125,26 @@
                                         &trans  &none   &trans          &mkp MCLK       &mkp LCLK       &mkp RCLK
             >;
         };
-#else
-        symbol {
-            display-name = "SYMBOL";
-            bindings = <
-                &trans      &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)        &kp LS(RPAR)       &kp ESC
-                &kp LCTRL   &trans        &trans      &trans         &trans        &trans           &kp GRAVE      &kp MINUS      &kp EQUAL     &kp LBKT            &kp RIGHT_BRACKET  &kp BSLH
-                &kp LSHFT   &trans        &trans      &trans         &trans        &trans           &kp LS(TILDE)  &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(LEFT_BRACE)  &kp LS(RBRC)       &kp LS(PIPE)
-                                                      &trans       &none        &trans          &trans        &none         &trans
-            >;
-        };
-        func_mousekey {
-            display-name = "FUNC_MOUSEKEY";
-            bindings = <
-                &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-                &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &kp F12
-                &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans
-                                        &trans  &none  &trans       &trans  &none  &trans
-            >;
-        };
-#endif
+// #else
+//         symbol {
+//             display-name = "SYMBOL";
+//             bindings = <
+//                 &trans      &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)        &kp LS(RPAR)       &kp ESC
+//                 &kp LCTRL   &trans        &trans      &trans         &trans        &trans           &kp GRAVE      &kp MINUS      &kp EQUAL     &kp LBKT            &kp RIGHT_BRACKET  &kp BSLH
+//                 &kp LSHFT   &trans        &trans      &trans         &trans        &trans           &kp LS(TILDE)  &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(LEFT_BRACE)  &kp LS(RBRC)       &kp LS(PIPE)
+//                                                       &trans       &none        &trans          &trans        &none         &trans
+//             >;
+//         };
+//         func_mousekey {
+//             display-name = "FUNC_MOUSEKEY";
+//             bindings = <
+//                 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+//                 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &kp F12
+//                 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans
+//                                         &trans  &none  &trans       &trans  &none  &trans
+//             >;
+//         };
+// #endif
 
         sys_media {
             display-name = "SYS_MEDIA";
