@@ -46,7 +46,7 @@
 // #include "includes/behaviours_mod_morph.dtsi"
 // #include "includes/behaviours_other.dtsi"
 
-#include "includes/qh_conditional_layers_v2.dtsi"
+
 #include "includes/qh_combos_v2.dtsi"
 #include "includes/qh_behaviours_other_v2.dtsi"
 
@@ -105,16 +105,16 @@
             >;
         };
 
+#ifdef HAS_MOUSE_KEYS
         SYMBOL {
             display-name = "SYMBOL";
             bindings = <
                 &trans      &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)        &kp LS(RPAR)       &kp ESC
-                &kp LCTRL   &trans        &trans      &trans         &trans        &trans           &kp GRAVE      &kp MINUS      &kp EQUAL     &kp LBKT            &kp RIGHT_BRACKET  &kp BSLH
+                &kp LCTRL   &trans        &mkp MCLK      &mkp RCLK         &mkp LCLK        &trans           &kp GRAVE      &kp MINUS      &kp EQUAL     &kp LBKT            &kp RIGHT_BRACKET  &kp BSLH
                 &kp LSHFT   &trans        &trans      &trans         &trans        &trans           &kp LS(TILDE)  &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(LEFT_BRACE)  &kp LS(RBRC)       &kp LS(PIPE)
                                                       &trans       &none        &trans          &trans        &none         &trans
             >;
         };
-#ifdef HAS_MOUSE_KEYS
         FUNC_MOUSEKEY {
             display-name = "FUNC_MOUSEKEY";
             bindings = <
@@ -125,6 +125,15 @@
             >;
         };
 #else
+        SYMBOL {
+            display-name = "SYMBOL";
+            bindings = <
+                &trans      &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)        &kp LS(RPAR)       &kp ESC
+                &kp LCTRL   &trans        &trans      &trans         &trans        &trans           &kp GRAVE      &kp MINUS      &kp EQUAL     &kp LBKT            &kp RIGHT_BRACKET  &kp BSLH
+                &kp LSHFT   &trans        &trans      &trans         &trans        &trans           &kp LS(TILDE)  &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(LEFT_BRACE)  &kp LS(RBRC)       &kp LS(PIPE)
+                                                      &trans       &none        &trans          &trans        &none         &trans
+            >;
+        };
         FUNC_MOUSEKEY {
             display-name = "FUNC_MOUSEKEY";
             bindings = <
@@ -171,3 +180,5 @@
   };
 
 };
+
+#include "includes/qh_conditional_layers_v2.dtsi"
