@@ -111,7 +111,7 @@
             display-name = "SYMBOL";
             bindings = <
                 &trans      &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)        &kp LS(RPAR)       &kp ESC
-                &kp LCTRL   &trans        &mkp MCLK      &mkp RCLK         &mkp LCLK        &trans           &kp GRAVE      &kp MINUS      &kp EQUAL     &kp LBKT            &kp RIGHT_BRACKET  &kp BSLH
+                &kp LCTRL   &trans        &mkp RCLK      &mkp MCLK         &mkp LCLK        &trans           &kp GRAVE      &kp MINUS      &kp EQUAL     &kp LBKT            &kp RIGHT_BRACKET  &kp BSLH
                 &kp LSHFT   &trans        &trans      &trans         &trans        &trans           &kp LS(TILDE)  &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(LEFT_BRACE)  &kp LS(RBRC)       &kp LS(PIPE)
                                                       &trans       &trans        &trans          &trans        &trans         &trans
             >;
@@ -120,7 +120,7 @@
             display-name = "FUNC_MOUSEKEY";
             bindings = <
                 &trans  &kp F1  &kp F2         &kp F3            &kp F4     &kp F5          &kp F6          &kp F7          &kp F8          &kp F9          &kp F10  &kp F11
-                &trans  &trans  &mkp MCLK      &mkp RCLK         &mkp LCLK  &trans          &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT &trans   &kp F12
+                &trans  &trans  &mkp RCLK      &mkp MCLK         &mkp LCLK  &trans          &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT &trans   &kp F12
                 &trans  &trans  &trans         &trans            &trans     &trans          &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT &trans   &trans
                                                &trans            &trans     &trans          &trans       &trans       &trans
             >;
@@ -161,7 +161,7 @@
             display-name = "MOUSE_TP";
             bindings = <
                 &trans              &trans      &trans      &trans      &trans          &trans              &trans          &trans          &trans          &trans              &trans          &trans
-                &tog MOUSE_TP       &trans      &mkp MCLK   &mkp RCLK   &mkp LCLK          &trans           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT     &trans       &trans
+                &tog MOUSE_TP       &trans      &mkp RCLK   &mkp MCLK   &mkp LCLK          &trans           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT     &trans       &trans
                 &tog MOUSE_TP       &trans      &trans      &trans      &trans          &trans              &trans          &trans          &trans          &trans              &trans          &tog MOUSE_TP
                                                             &trans      &trans   &mkp RCLK           &mkp LCLK       &mkp MCLK       &trans
 
