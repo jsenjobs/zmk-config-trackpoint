@@ -115,7 +115,7 @@
     // tp-x-invert;
     // tp-y-invert;
 
-    scroll_mode;
+    scroll-mode;
 
   };
 
