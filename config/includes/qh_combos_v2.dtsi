@@ -64,20 +64,20 @@
     };
 
 
-    combo_tog_sys_media_l {
+    combo_tog_sys_l {
       timeout-ms = <COMBO_TERM_SLOW>;
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LT5 LT4 LH1>;
       layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-      bindings = <&tog SYS_MEDIA>;
+      bindings = <&tog SYS>;
     };
 
-    combo_tog_sys_media_r {
+    combo_tog_sys_r {
       timeout-ms = <COMBO_TERM_SLOW>;
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RT4 RT5 RH1>;
       layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-      bindings = <&tog SYS_MEDIA>;
+      bindings = <&tog SYS>;
     };
 
 

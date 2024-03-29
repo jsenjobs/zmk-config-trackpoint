@@ -20,5 +20,67 @@
             bindings = <&out OUT_TOG>, <&bt BT_CLR>;
         };
 
+        td_mo_tog: td_mo_tog {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <2>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&mo>, <&tog>;
+        };
+
+
+        // hold tap
+
+        mo_kp: behavior_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
+
+        // start idea shortcut
+        td_debug_run: td_debug_run {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&kp LC(R)>, <&kp LC(LA(R))>;
+        }; 
+
+        td_debug_debug: td_debug_debug {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&kp LC(D)>, <&kp LC(LA(D))>;
+        }; 
+
+        // LG(F8) toggle breakpoint
+        td_debug_breakpoint: td_debug_breakpoint {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&kp LG(F8)>, <&kp LS(LG(F8))>;
+        }; 
+
+        // show bookmarks hold LG(F3)
+        // toggle bookmark press F3
+        // toggle bookmark mnemonic double press LA(F3)
+        td_debug_bookmark: td_debug_bookmark {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&mt LG(F3) F3>, <&kp LA(F3)>;
+        }; 
+
+        // evaluate expression LA(F8)
+        // quick evaluate expression LA(LG(F8))
+        td_debug_evaluate: td_debug_evaluate {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&kp LA(F8)>, <&kp LA(LG(F8))>;
+        }; 
+        // end idea shortcut
+
+
     };
 };
