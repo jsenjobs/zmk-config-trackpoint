@@ -199,6 +199,24 @@ parse_config:
     '&ltog LGUI 8': {t: "Cancel\nFunc", h: '⌘'}
     '&ltog LGUI 9': {t: "Cancel\nAdjust", h: '⌘'}
     '&trans': {t: ' '}
+    '&td_layer_symbol_debug': {t: 'DEBUG', h: 'SYMBOL'}
+    '&mo_kp NUM_NAV ESC': {t: '⎋', h: 'NUM_NAV'}
+    '&td_debug_evaluate': 'IDEA evaluate'
+    '&td_debug_run': 'IDEA run'
+    '&td_debug_debug': 'IDEA debug'
+    '&td_debug_breakpoint': 'IDEA breakpoint'
+    '&td_debug_bookmark': 'IDEA bookmark'
+    '&mkp LCLK': 'LCLK'
+    '&mkp MCLK': 'MCLK'
+    '&mkp RCLK': 'RCLK'
+    '&msc SCRL_LEFT': 'scroll ←'
+    '&msc SCRL_DOWN': 'scroll ↑'
+    '&msc SCRL_UP': 'scroll ↓'
+    '&msc SCRL_RIGHT': 'scroll →'
+    '&mmv MOVE_LEFT': 'move ←'
+    '&mmv MOVE_DOWN': 'move ↓'
+    '&mmv MOVE_UP': 'move ↑'
+    '&mmv MOVE_RIGHT': 'move →'
   skip_binding_parsing: false
   zmk_keycode_map:
     BSPC: '⌫'
@@ -290,7 +308,9 @@ parse_config:
     DOWN: ↓
     TAB: ↹
     RETURN: '⏎'
+    RET: '⏎'
     ESCAPE: '⎋'
+    ESC: '⎋'
     C_REWIND: '⏮'
     C_FAST_FORWARD: '⏭'
     C_PAUSE: '⏯'
@@ -316,6 +336,7 @@ parse_config:
     'LG(V)': '⌘V'
     'LC(TAB)': '⌃↹'
     'LS(LC(TAB))': '⌃⇧↹'
+    'RC(SPACE)': 'Input Method'
   zmk_combos:
     combo_tog_nav_word: {'a': 'bottom', 'o': +0.05}
     combo_tog_num_word: {'a': 'bottom', 'o': +0.25}
@@ -323,3 +344,23 @@ parse_config:
     combo_capsword: {'k': "Caps\nWord"}
     combo_tog_mouse_keys_l: {'a': 'bottom', 'o': +2}
     combo_tog_mouse_keys_r: {'a': 'bottom', 'o': +2}
+    base_qwerty_l: {'a': 'top', 'o': +0.5}
+    base_qwerty_r: {'a': 'top', 'o': +0.5}
+    base_colemak_l: {'a': 'top', 'o': +1}
+    base_colemak_r: {'a': 'top', 'o': +1}
+    base_dvorak_l: {'a': 'top', 'o': +1.5}
+    base_dvorak_r: {'a': 'top', 'o': +1.5}
+    combo_tog_mouse_settings_l: {'a': 'top', 'o': +2}
+    combo_tog_mouse_settings_r: {'a': 'top', 'o': +2}
+    combo_tog_sys_l: {'a': 'top', 'o': +2.5}
+    combo_tog_sys_r: {'a': 'top', 'o': +2.5}
+    base_media_l: {'a': 'top', 'o': +3}
+    base_media_r: {'a': 'top', 'o': +3}
+    alt_l: {'a': 'left', 'o': -1}
+    alt_r: {'a': 'right', 'o': -1}
+    gui_alt_l: {'a': 'left', 'o': -1}
+    gui_alt_r: {'a': 'right', 'o': -1}
+    ctrl_l: {'a': 'left', 'o': -1}
+    ctrl_r: {'a': 'right', 'o': -1}
+    ctrl_a_l: {'a': 'left', 'o': -1}
+    ctrl_alt_r: {'a': 'right', 'o': -1}

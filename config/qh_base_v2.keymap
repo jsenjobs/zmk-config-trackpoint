@@ -114,10 +114,10 @@
         symbol {
             display-name = "SYMBOL";
             bindings = <
-                &trans      &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND) &kp LS(DLLR)  &kp LS(PRCNT)             &kp LS(CARET)   &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)        &kp LS(RPAR)       &kp ESC
-                &kp LCTRL   &trans        &mkp RCLK   &mkp MCLK     &mkp LCLK     &trans                    &kp GRAVE       &kp MINUS      &kp EQUAL     &kp LBKT            &kp RIGHT_BRACKET  &kp BSLH
-                &kp LSHFT   &trans        &trans      &trans        &trans        &trans                    &kp LS(TILDE)   &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(LEFT_BRACE)  &kp LS(RBRC)       &kp LS(PIPE)
-                                                      &trans        &trans        &trans                    &trans          &trans         &trans
+                &trans      &kp EXCL      &kp AT      &kp POUND     &kp DLLR      &kp PRCNT                 &kp CARET       &kp AMPS        &kp STAR    &kp LPAR    &kp RPAR    &kp ESC
+                &kp LCTRL   &trans        &mkp RCLK   &mkp MCLK     &mkp LCLK     &trans                    &kp GRAVE       &kp MINUS       &kp EQUAL   &kp LBKT    &kp RBKT    &kp BSLH
+                &kp LSHFT   &trans        &trans      &trans        &trans        &trans                    &kp TILDE       &kp UNDER       &kp PLUS    &kp LBRC    &kp RBRC    &kp PIPE
+                                                      &trans        &trans        &trans                    &trans          &trans          &trans
             >;
         };
         func_mousekey {
