@@ -20,11 +20,11 @@
             bindings = <&out OUT_TOG>, <&bt BT_CLR>;
         };
 
-        td_mo_tog: td_mo_tog {
+        td_layer_symbol_debug: td_layer_symbol_debug {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TD_TAPPING_TERM>;
-            bindings = <&mo>, <&tog>;
+            bindings = <&mo SYMBOL>, <&tog DEBUG>;
         };
 
 
