@@ -27,6 +27,13 @@
             bindings = <&mo SYMBOL>, <&tog DEBUG>;
         };
 
+        td_debug: td_debug {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&trans>, <&tog DEBUG>;
+        };
+
 
         // hold tap
 
