@@ -158,9 +158,9 @@
         raycast_shortcut {
             display-name = "RAYCAST_SHORTCUT";
             bindings = <
-                &RAS(EXCL)  RAS(Q)  RAS(W)     RAS(E)     RAS(R)      RAS(T)               RAS(Y)       RAS(U)    RAS(I)      RAS(O)     RAS(P)          RAS(AMPS)
-                &RAS(AT)    RAS(A)  RAS(S)     RAS(D)     RAS(F)      RAS(G)               RAS(H)       RAS(J)    RAS(K)      RAS(L)     RAS(SEMICOLON)  RAS(STAR)
-                &RAS(POUND) RAS(Z)  RAS(X)     RAS(C)     RAS(V)      RAS(B)               RAS(N)       RAS(M)    RAS(COMMA)  RAS(DOT)   RAS(SLASH)      RAS(LPAR)
+                RAS(EXCL)  RAS(Q)  RAS(W)     RAS(E)     RAS(R)      RAS(T)               RAS(Y)       RAS(U)    RAS(I)      RAS(O)     RAS(P)          RAS(AMPS)
+                RAS(AT)    RAS(A)  RAS(S)     RAS(D)     RAS(F)      RAS(G)               RAS(H)       RAS(J)    RAS(K)      RAS(L)     RAS(SEMICOLON)  RAS(STAR)
+                RAS(POUND) RAS(Z)  RAS(X)     RAS(C)     RAS(V)      RAS(B)               RAS(N)       RAS(M)    RAS(COMMA)  RAS(DOT)   RAS(SLASH)      RAS(LPAR)
                                               &trans     &trans      &trans               &trans       &trans    &trans
             >;
         };
