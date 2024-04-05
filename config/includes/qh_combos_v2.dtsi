@@ -73,42 +73,36 @@
     base_qwerty_l {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH1 LT0 LB0>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_QWERTY>;
     };
 
     base_qwerty_r {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH1 RT0 RB0>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_QWERTY>;
     };
 
     base_colemak_l {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH1 LT1 LB1>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_COLEMAK>;
     };
 
     base_colemak_r {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH1 RT1 RB1>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_COLEMAK>;
     };
 
     base_dvorak_l {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH1 LT2 LB2>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_DVORAK>;
     };
 
     base_dvorak_r {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH1 RT2 RB2>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_DVORAK>;
     };
 
@@ -116,42 +110,36 @@
     base_media_l {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH1 LT5 LT4>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog MEDIA_EXT>;
     };
 
     base_media_r {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH1 RT5 RT4>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog MEDIA_EXT>;
     };
 
     combo_tog_sys_l {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH1 LT5 LB5>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog SYS>;
     };
 
     combo_tog_sys_r {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH1 RT5 RB5>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog SYS>;
     };
 #ifdef HAS_MOUSE_TP
     combo_tog_mouse_settings_l {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH1 LT4 LB4>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog MOUSE_SET>;
     };
 
     combo_tog_mouse_settings_r {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH1 RT4 RB4>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog MOUSE_SET>;
     };
 #endif
@@ -161,42 +149,36 @@
     base_qwerty_l2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH2 LT0 LB0>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_QWERTY>;
     };
 
     base_qwerty_r2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH2 RT0 RB0>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_QWERTY>;
     };
 
     base_colemak_l2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH2 LT1 LB1>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_COLEMAK>;
     };
 
     base_colemak_r2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH2 RT1 RB1>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_COLEMAK>;
     };
 
     base_dvorak_l2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH2 LT2 LB2>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_DVORAK>;
     };
 
     base_dvorak_r2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH2 RT2 RB2>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog BASE_DVORAK>;
     };
 
@@ -204,42 +186,36 @@
     base_media_l2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH2 LT5 LT4>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog MEDIA_EXT>;
     };
 
     base_media_r2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH2 RT5 RT4>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog MEDIA_EXT>;
     };
 
     combo_tog_sys_l2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH2 LT5 LB5>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog SYS>;
     };
 
     combo_tog_sys_r2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH2 RT5 RB5>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog SYS>;
     };
 #ifdef HAS_MOUSE_TP
     combo_tog_mouse_settings_l2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LH2 LT4 LB4>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog MOUSE_SET>;
     };
 
     combo_tog_mouse_settings_r2 {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RH2 RT4 RB4>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&tog MOUSE_SET>;
     };
 #endif

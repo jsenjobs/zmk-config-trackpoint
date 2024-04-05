@@ -130,7 +130,7 @@
             bindings = <
                 RAS(EXCL)  &kp F1  &kp F2     &kp F3     &kp F4      &kp F5              &kp F6          &kp F7          &kp F8          &kp F9          &kp F10  &kp F11
                 RAS(AT)    RAS(A)  RAS(S)     RAS(D)     RAS(F)      RAS(G)              &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT &trans   &kp F12
-                RAS(POUND) RAS(Z)  RAS(X)     RAS(C)     RAS(V)      RAS(B)              &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_LEFT &trans   &trans
+                RAS(POUND) RAS(Z)  RAS(X)     RAS(C)     RAS(V)      RAS(B)              &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT &trans   &trans
                                                &trans    &trans      &trans              &trans          &trans          &trans
             >;
         };
