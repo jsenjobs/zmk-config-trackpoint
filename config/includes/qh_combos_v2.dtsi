@@ -62,7 +62,12 @@
         bindings = <&kp RA(RCTRL)>;
     };
 
-
+    raycast_shortcut {
+        timeout-ms = <COMBO_TERM_SLOW>;
+        key-positions = <LH2 RH2>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings = <&mo RAYCAST_SHORTCUT>;
+    };
 
 
     base_qwerty_l {
