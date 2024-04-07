@@ -20,6 +20,32 @@
             bindings = <&out OUT_TOG>, <&bt BT_CLR>;
         };
 
+        td_left_layer: td_left_layer {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&mo SYMBOL>, <&mo RAYCAST_SHORTCUT_1>;
+        }; 
+
+        td_right_layer: td_right_layer {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TAPPING_TERM>;
+            bindings = <&mo NUM_NAV>, <&mo RAYCAST_SHORTCUT_2>;
+        }; 
+
+        // hold tap
+
+        // mo_kp: behavior_mo_tog {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     flavor = "hold-preferred";
+        //     tapping-term-ms = <200>;
+        //     bindings = <&mo>, <&kp>;
+        // };
+
+        // start debug 
+
         // td_layer_symbol_debug: td_layer_symbol_debug {
         //     compatible = "zmk,behavior-tap-dance";
         //     #binding-cells = <0>;
@@ -34,18 +60,6 @@
             bindings = <&trans>, <&tog DEBUG>;
         };
 
-
-        // hold tap
-
-        // mo_kp: behavior_mo_tog {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     flavor = "hold-preferred";
-        //     tapping-term-ms = <200>;
-        //     bindings = <&mo>, <&kp>;
-        // };
-
-        // start debug 
         // start idea shortcut
         td_debug_run: td_debug_run {
             compatible = "zmk,behavior-tap-dance";

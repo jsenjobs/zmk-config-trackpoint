@@ -13,16 +13,17 @@
 #define SYMBOL 4
 #define FUNC_MOUSEKEY 5
 
-#define RAYCAST_SHORTCUT 6
+#define RAYCAST_SHORTCUT_1 6
+#define RAYCAST_SHORTCUT_2 7
 
 // 亮度，声音，macro
-#define MEDIA_EXT 7
+#define MEDIA_EXT 8
 // idea debug
-#define DEBUG 8
-#define SYS 9
+#define DEBUG 9
+#define SYS 10
 
-#define MOUSE_TP 10
-#define MOUSE_SET 11
+#define MOUSE_TP 11
+#define MOUSE_SET 12
 
 
 // ZMK includes
@@ -81,7 +82,7 @@
                 &kp TAB    &kp Q  &kp W     &kp E     &kp R                     &kp T               &kp Y    &kp U              &kp I      &kp O    &kp P          &kp BACKSPACE
                 &kp LCTRL  &kp A  &kp S     &kp D     &kp F                     &kp G               &kp H    &kp J              &kp K      &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
                 &kp LSHFT  &kp Z  &kp X     &kp C     &kp V                     &kp B               &kp N    &kp M              &kp COMMA  &kp DOT  &kp SLASH      &kp RSHFT
-                                            &kp LGUI  &mo SYMBOL                &kp SPACE           &kp RET  &mo NUM_NAV        &kp RCTRL
+                                            &kp LGUI  &td_left_layer            &kp SPACE           &kp RET  &td_right_layer    &kp RCTRL
             >;
         };
 
@@ -91,17 +92,17 @@
                 &kp TAB    &kp Q  &kp W     &kp F     &kp P                     &kp G               &kp J    &kp L              &kp U      &kp Y    &kp SEMICOLON   &kp BACKSPACE
                 &kp LCTRL  &kp A  &kp R     &kp S     &kp T                     &kp D               &kp H    &kp N              &kp E      &kp I    &kp O           &kp SINGLE_QUOTE
                 &kp LSHFT  &kp Z  &kp X     &kp C     &kp V                     &kp B               &kp K    &kp M              &kp COMMA  &kp DOT  &kp SLASH       &kp RSHFT
-                                            &kp LGUI  &mo SYMBOL                &kp SPACE           &kp RET  &mo NUM_NAV        &kp RCTRL
+                                            &kp LGUI  &td_left_layer            &kp SPACE           &kp RET  &td_right_layer    &kp RCTRL
             >;
         };
 
         base_dvorak {
             display-name = "BASE_DVORAK";
             bindings = <
-                &kp TAB    &kp SINGLE_QUOTE &kp COMMA   &kp DOT   &kp P                     &kp Y                   &kp F    &kp G                  &kp C      &kp R  &kp L  &kp BACKSPACE
-                &kp LCTRL  &kp A            &kp O       &kp E     &kp U                     &kp I                   &kp D    &kp H                  &kp T      &kp N  &kp S  &kp SLASH
-                &kp LSHFT  &kp SEMICOLON    &kp Q       &kp J     &kp K                     &kp X                   &kp B    &kp M                  &kp W      &kp V  &kp Z  &kp RSHFT
-                                                        &kp LGUI  &mo SYMBOL                &kp SPACE               &kp RET  &mo NUM_NAV            &kp RCTRL
+                &kp TAB    &kp SINGLE_QUOTE &kp COMMA   &kp DOT   &kp P         &kp Y               &kp F    &kp G                  &kp C      &kp R  &kp L  &kp BACKSPACE
+                &kp LCTRL  &kp A            &kp O       &kp E     &kp U         &kp I               &kp D    &kp H                  &kp T      &kp N  &kp S  &kp SLASH
+                &kp LSHFT  &kp SEMICOLON    &kp Q       &kp J     &kp K         &kp X               &kp B    &kp M                  &kp W      &kp V  &kp Z  &kp RSHFT
+                                            &kp LGUI    &td_left_layer          &kp SPACE           &kp RET  &td_right_layer    &kp RCTRL
             >;
         };
 
@@ -111,7 +112,7 @@
                 &kp CAPS    &kp N1      &kp N2      &kp N3       &kp N4        &kp N5          &kp N6    &kp N7    &kp N8     &kp N9     &kp N0  &trans
                 &trans      &trans      &trans      &td_debug    &kp RC(SPACE) &trans          &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans  &trans
                 &trans      &trans      &trans      &trans       &trans        &trans          &trans    &trans    &trans     &trans     &trans  &trans
-                                                    &trans       &trans        &trans          &trans    &trans    &trans
+                                                    &trans       &trans        &trans          &trans    &none    &trans
             >;
         };
 
@@ -122,7 +123,7 @@
                 &trans      &kp EXCL      &kp AT      &kp POUND     &kp DLLR      &kp PRCNT                 &kp CARET       &kp AMPS        &kp STAR    &kp LPAR    &kp RPAR    &kp ESC
                 &kp LCTRL   &trans        &mkp RCLK   &mkp MCLK     &mkp LCLK     &trans                    &kp GRAVE       &kp MINUS       &kp EQUAL   &kp LBKT    &kp RBKT    &kp BSLH
                 &kp LSHFT   &trans        &trans      &trans        &trans        &trans                    &kp TILDE       &kp UNDER       &kp PLUS    &kp LBRC    &kp RBRC    &kp PIPE
-                                                      &trans        &trans        &trans                    &trans          &trans          &trans
+                                                      &trans        &none        &trans                    &trans          &trans          &trans
             >;
         };
         func_mousekey {
@@ -131,7 +132,7 @@
                 &trans  &kp F1  &kp F2      &kp F3     &kp F4      &kp F5              &kp F6          &kp F7          &kp F8          &kp F9          &kp F10  &kp F11
                 &trans  &trans  &trans      &trans     &trans      &trans              &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT &trans   &kp F12
                 &trans  &trans  &trans      &trans     &trans      &trans              &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT &trans   &trans
-                                            &trans    &trans      &trans              &trans          &trans          &trans
+                                            &trans      &trans      &trans             &trans          &trans          &trans
             >;
         };
 #else
@@ -141,7 +142,7 @@
                 &trans      &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)        &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)        &kp LS(RPAR)       &kp ESC
                 &kp LCTRL   &trans        &trans      &trans         &trans        &trans               &kp GRAVE      &kp MINUS      &kp EQUAL     &kp LBKT            &kp RIGHT_BRACKET  &kp BSLH
                 &kp LSHFT   &trans        &trans      &trans         &trans        &trans               &kp LS(TILDE)  &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(LEFT_BRACE)  &kp LS(RBRC)       &kp LS(PIPE)
-                                                      &trans         &trans        &trans               &trans         &trans         &trans
+                                                      &trans         &none        &trans               &trans         &trans         &trans
             >;
         };
         func_mousekey {
@@ -155,13 +156,23 @@
         };
 #endif
 
-        raycast_shortcut {
-            display-name = "RAYCAST_SHORTCUT";
+        raycast_shortcut_1 {
+            display-name = "RAYCAST_SHORTCUT_1";
             bindings = <
-                RAS(EXCL)  RAS(Q)  RAS(W)     RAS(E)     RAS(R)      RAS(T)               RAS(Y)       RAS(U)    RAS(I)      RAS(O)     RAS(P)          RAS(AMPS)
-                RAS(AT)    RAS(A)  RAS(S)     RAS(D)     RAS(F)      RAS(G)               RAS(H)       RAS(J)    RAS(K)      RAS(L)     RAS(SEMICOLON)  RAS(STAR)
-                RAS(POUND) RAS(Z)  RAS(X)     RAS(C)     RAS(V)      RAS(B)               RAS(N)       RAS(M)    RAS(COMMA)  RAS(DOT)   RAS(SLASH)      RAS(LPAR)
-                                              &trans     &trans      &trans               &trans       &trans    &trans
+                RAS(A)  RAS(B)  RAS(C)     RAS(D)     RAS(E)      RAS(F)               RAS(G)       RAS(H)    RAS(I)   RAS(J)   RAS(K)   RAS(L)
+                RAS(M)  RAS(N)  RAS(O)     RAS(P)     RAS(Q)      RAS(R)               RAS(S)       RAS(T)    RAS(U)   RAS(V)   RAS(W)   RAS(X)
+                RAS(Y)  RAS(Z)  RAS(N1)    RAS(N2)    RAS(N3)     RAS(N4)              RAS(N5)      RAS(N6)   RAS(N7)  RAS(N8)  RAS(N9)  RAS(N0)
+                                           &none      &none       &none                &none        &none     &none
+            >;
+        };
+
+        raycast_shortcut_2 {
+            display-name = "RAYCAST_SHORTCUT_2";
+            bindings = <                   
+                RAS(F1)    RAS(F2)  RAS(F3)       RAS(F4)      RAS(F5)        RAS(F6)                 RAS(F7)        RAS(F8)     RAS(F9)    RAS(F10)   RAS(F11)   RAS(F12)
+                RAS(F13)   RAS(F14) RAS(F15)      RAS(F16)     RAS(F17)       RAS(F18)                RAS(F19)       RAS(F20)    RAS(F21)   RAS(F22)   RAS(F23)   RAS(F24)
+                RAS(EXCL)  RAS(AT)  RAS(POUND)    RAS(DLLR)    RAS(PRCNT)     RAS(CARET)              RAS(AMPS)      RAS(STAR)   RAS(LPAR)  RAS(RPAR)  RAS(EQUAL) RAS(PLUS)
+                                           &none      &none       &none                &none        &none     &none
             >;
         };
 
