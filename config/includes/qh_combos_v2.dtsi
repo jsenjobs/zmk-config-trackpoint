@@ -45,7 +45,7 @@
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LM3 LM2>;
         layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings = <&kp LA(LC)>;
+        bindings = <&kp LA(LCTRL)>;
     };
 
     alt_r {
@@ -87,9 +87,9 @@
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RM3 RM2>;
         layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings = <&kp RA(RC)>;
+        bindings = <&kp RA(RCTRL)>;
     };
-    
+
     // raycast_shortcut {
     //     timeout-ms = <COMBO_TERM_SLOW>;
     //     key-positions = <LH2 RH2>;
