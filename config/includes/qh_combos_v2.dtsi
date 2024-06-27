@@ -6,6 +6,7 @@
   combos {
     compatible = "zmk,combos";
 
+    // left combos
     alt_l {
         timeout-ms = <COMBO_TERM_SLOW>;
         key-positions = <LM1 LH1>;
@@ -20,18 +21,19 @@
         bindings = <&kp LG(LEFT_ALT)>;
     };
 
-    ctrl_l {
+
+    gui_ctrl_l {
         timeout-ms = <COMBO_TERM_SLOW>;
         key-positions = <LM3 LH1>;
         layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings = <&kp LCTRL>;
+        bindings = <&kp  LG(LCTRL)>;
     };
 
-    ctrl_a_l {
+    alt_ctrl_l {
         timeout-ms = <COMBO_TERM_SLOW>;
         key-positions = <LM4 LH1>;
         layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings = <&kp LC(A)>;
+        bindings = <&kp  LA(LCTRL)>;
     };
 
     esc_l {
@@ -41,13 +43,28 @@
         bindings = <&kp ESC>;
     };
 
-    alt_ctrl_l {
+    ctrl_a_l {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <LM3 LM2>;
         layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings = <&kp LA(LCTRL)>;
+        bindings = <&kp LC(A)>;
     };
 
+    sc1_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <LB2 LB1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_1>;
+    };
+
+    sc2_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <LT2 LT1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_2>;
+    };
+
+    // right combos
     alt_r {
         timeout-ms = <COMBO_TERM_SLOW>;
         key-positions = <RM1 RH1>;
@@ -62,14 +79,14 @@
         bindings = <&kp RG(RIGHT_ALT)>;
     };
 
-    ctrl_r {
+    gui_ctrl_r {
         timeout-ms = <COMBO_TERM_SLOW>;
         key-positions = <RM3 RH1>;
         layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings = <&kp RCTRL>;
+        bindings = <&kp RG(RCTRL)>;
     };
 
-    ctrl_alt_r {
+    alt_ctrl_r {
         timeout-ms = <COMBO_TERM_SLOW>;
         key-positions = <RM4 RH1>;
         layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
@@ -83,19 +100,26 @@
         bindings = <&kp ESC>;
     };
 
-    alt_ctrl_r {
+    ctrl_a_r {
         timeout-ms = <COMBO_TERM_FAST>;
         key-positions = <RM3 RM2>;
         layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings = <&kp RA(RCTRL)>;
+        bindings = <&kp RC(A)>;
     };
 
-    // raycast_shortcut {
-    //     timeout-ms = <COMBO_TERM_SLOW>;
-    //     key-positions = <LH2 RH2>;
-    //     layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-    //     bindings = <&mo RAYCAST_SHORTCUT_1>;
-    // };
+    sc1_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <RB2 RB1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_1>;
+    };
+
+    sc2_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <RT2 RT1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_2>;
+    };
 
 
     base_qwerty_l {
