@@ -170,7 +170,7 @@
             display-name = "RAYCAST_SHORTCUT_2";
             bindings = <                   
                 RAS(F1)    RAS(F2)  RAS(F3)       RAS(F4)     RAS(F5)       RAS(F6)           RAS(F7)        RAS(F8)     RAS(F9)     RAS(F10)    RAS(F11)   RAS(F12)
-                RAS(F13)   RAS(F14) RAS(F15)      RAS(F16)    RAS(F17)      RAS(F18)          RAS(F19)       RAS(F20)    RAS(GRAVE)  RAS(MINUS)  RAS(EQUAL) RAS(BSLH)
+                RAS(INS)   RAS(HOME) RAS(PG_UP)      RAS(DEL)    RAS(END)      RAS(PG_DN)          RAS(GRAVE)       RAS(MINUS)    RAS(EQUAL)  RAS(LBKT)  RAS(RBKT) RAS(BSLH)
                 RAS(SEMI)  RAS(SQT) RAS(COMMA)    RAS(DOT)    RAS(FSLH)     RAS(UP)           RAS(DOWN)      RAS(LEFT)   RAS(RIGHT)  RAS(RET)    RAS(SPACE) RAS(TAB)
                                                   &none       &none         &none             &none          &none       &none
             >;
