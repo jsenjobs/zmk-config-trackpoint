@@ -1,4 +1,5 @@
 #!/bin/sh
+# pip install keymap-drawer
 
 echo 'Parsing ZMK keymap...'
 keymap -c keymap_config.yaml parse -c 12 -z ../config/qhws42v3.keymap > keymap.yaml
