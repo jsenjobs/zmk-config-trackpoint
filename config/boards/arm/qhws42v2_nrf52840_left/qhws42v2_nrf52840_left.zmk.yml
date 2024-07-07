@@ -1,0 +1,10 @@
+file_format: "1"
+id: qhws42v2_nrf52840_left
+name: qhws42v2_nrf52840_left
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+url: https://github.com/jsenjobs/zmk-config-trackpoint
+exposes: [pro_micro]

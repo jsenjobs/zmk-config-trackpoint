@@ -1,10 +1,10 @@
 # The side with the PS2 Mouse / TP has to be the central half
 
-if SHIELD_QH_RIGHT
-# if SHIELD_QH_LEFT
+if SHIELD_QHWSV2_RIGHT
+# if SHIELD_QHWSV2_LEFT
 
 config ZMK_KEYBOARD_NAME
-#	default "QHKBL"
+# 	default "QHKBL"
     default "QHKB"
 
 config ZMK_SPLIT_ROLE_CENTRAL
@@ -12,7 +12,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_QH_LEFT || SHIELD_QH_RIGHT
+if SHIELD_QHWSV2_LEFT || SHIELD_QHWSV2_RIGHT
 
 config ZMK_SPLIT
 	default y
