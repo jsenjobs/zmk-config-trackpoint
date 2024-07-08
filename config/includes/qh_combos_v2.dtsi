@@ -50,20 +50,6 @@
         bindings = <&kp LC(A)>;
     };
 
-    sc1_l {
-        timeout-ms = <COMBO_TERM_FAST>;
-        key-positions = <LB2 LB1>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings =  <&mo RAYCAST_SHORTCUT_1>;
-    };
-
-    sc2_l {
-        timeout-ms = <COMBO_TERM_FAST>;
-        key-positions = <LT2 LT1>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings =  <&mo RAYCAST_SHORTCUT_2>;
-    };
-
     // right combos
     alt_r {
         timeout-ms = <COMBO_TERM_SLOW>;
@@ -105,20 +91,6 @@
         key-positions = <RM3 RM2>;
         layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
         bindings = <&kp RC(A)>;
-    };
-
-    sc1_r {
-        timeout-ms = <COMBO_TERM_FAST>;
-        key-positions = <RB2 RB1>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings =  <&mo RAYCAST_SHORTCUT_1>;
-    };
-
-    sc2_r {
-        timeout-ms = <COMBO_TERM_FAST>;
-        key-positions = <RT2 RT1>;
-        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
-        bindings =  <&mo RAYCAST_SHORTCUT_2>;
     };
 
 
@@ -195,6 +167,64 @@
         bindings = <&tog MOUSE_SET>;
     };
 #endif
+
+// shortcuts
+
+    sc1_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <LB2 LB1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_1>;
+    };
+
+    sc2_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <LT2 LT1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_2>;
+    };
+
+    sc3_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <LH0 LM2>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_1>;
+    };
+
+    sc4_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <LH0 LM1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_2>;
+    };
+
+    sc1_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <RB2 RB1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_1>;
+    };
+
+    sc2_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <RT2 RT1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_2>;
+    };
+
+    sc3_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <RH0 RM2>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_1>;
+    };
+
+    sc4_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        key-positions = <RH0 RM1>;
+        layers = <BASE_QWERTY BASE_COLEMAK BASE_DVORAK>;
+        bindings =  <&mo RAYCAST_SHORTCUT_2>;
+    };
 
   };
 };

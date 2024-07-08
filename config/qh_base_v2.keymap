@@ -160,7 +160,7 @@
             display-name = "RAYCAST_SHORTCUT_1";
             bindings = <
                 RAS(A)  RAS(B)  RAS(C)     RAS(D)     RAS(E)      RAS(F)               RAS(G)       RAS(H)    RAS(I)   RAS(J)   RAS(K)   RAS(L)
-                RAS(M)  RAS(N)  RAS(O)     RAS(P)     RAS(Q)      RAS(R)               RAS(S)       RAS(T)    RAS(U)   RAS(V)   RAS(W)   RAS(X)
+                RAS(M)  RAS(N)  RAS(O)     RAS(P)     RAS(LNLCK)      RAS(R)               RAS(S)       RAS(T)    RAS(U)   RAS(V)   RAS(W)   RAS(X)
                 RAS(Y)  RAS(Z)  RAS(N1)    RAS(N2)    RAS(N3)     RAS(N4)              RAS(N5)      RAS(N6)   RAS(N7)  RAS(N8)  RAS(N9)  RAS(N0)
                                            &none      &none       &none                &none        &none     &none
             >;
@@ -171,7 +171,7 @@
             bindings = <                   
                 RAS(F1)    RAS(F2)  RAS(F3)       RAS(F4)     RAS(F5)       RAS(F6)           RAS(F7)        RAS(F8)     RAS(F9)     RAS(F10)    RAS(F11)   RAS(F12)
                 RAS(INS)   RAS(HOME) RAS(PG_UP)      RAS(DEL)    RAS(END)      RAS(PG_DN)          RAS(GRAVE)       RAS(MINUS)    RAS(EQUAL)  RAS(LBKT)  RAS(RBKT) RAS(BSLH)
-                RAS(SEMI)  RAS(SQT) RAS(COMMA)    RAS(DOT)    RAS(FSLH)     RAS(UP)           RAS(DOWN)      RAS(LEFT)   RAS(RIGHT)  RAS(RET)    RAS(SPACE) RAS(TAB)
+                RAS(SEMI)  RAS(SQT) RAS(PSCRN)    RAS(SLCK)    RAS(PAUSE_BREAK)     RAS(UP)           RAS(DOWN)      RAS(LEFT)   RAS(RIGHT)  RAS(RET)    RAS(SPACE) RAS(TAB)
                                                   &none       &none         &none             &none          &none       &none
             >;
         };
