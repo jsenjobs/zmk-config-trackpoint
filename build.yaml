@@ -17,11 +17,11 @@ include:
     shield: "qhws42v3_left"
   - board: qhws42v3_nrf52840_right
     shield: "qhws42v3_right"
-  - board: qhws42v2_nrf52840_left
-    shield: "qhws42v2_left"
-  - board: qhws42v2_nrf52840_right
-    shield: "qhws42v2_right"
-  - board: qhws42v3_nrf52840_left
-    shield: "settings_reset"
+  # - board: qhws42v2_nrf52840_left
+  #   shield: "qhws42v2_left"
+  # - board: qhws42v2_nrf52840_right
+  #   shield: "qhws42v2_right"
+  # - board: qhws42v3_nrf52840_left
+  #   shield: "settings_reset"
   - board: qhws42v3_nrf52840_right
     shield: "settings_reset"
