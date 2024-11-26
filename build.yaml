@@ -17,6 +17,7 @@ include:
     shield: "qhws42v3_left"
   - board: qhws42v3_nrf52840_right
     shield: "qhws42v3_right"
+    snippet: studio-rpc-usb-uart
   # - board: qhws42v2_nrf52840_left
   #   shield: "qhws42v2_left"
   # - board: qhws42v2_nrf52840_right
