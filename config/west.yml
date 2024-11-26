@@ -12,8 +12,7 @@ manifest:
     - name: zmk
       path: zmk
       remote: jsenjobs
-      revision: pr/mouse_ps2
-      # revision: mouse_ps2_v2_scroll
+      revision: mouse_ps2_v2_scroll
       import: app/west.yml
     # - name: zmk
     #   remote: infused-kim
