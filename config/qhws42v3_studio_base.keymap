@@ -42,6 +42,9 @@
 // #ifdef HAS_MOUSE_TP
 //      #include "includes/mouse_tp.dtsi"
 // #endif
+#ifdef HAS_MOUSE_KEYS
+    #include <dt-bindings/zmk/mouse.h>
+#endif
 
 // #include "includes/custom_keycodes.dtsi"
 #include "includes/settings.dtsi"
