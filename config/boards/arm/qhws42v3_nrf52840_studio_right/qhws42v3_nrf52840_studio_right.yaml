@@ -1,0 +1,15 @@
+identifier: qhws42v3_nrf52840_right
+name: qhws42v3_nrf52840_right
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - usb_device
+  - ble
+  - ieee802154
+  - pwm
+  - watchdog
