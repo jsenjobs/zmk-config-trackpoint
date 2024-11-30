@@ -18,8 +18,8 @@
 / {
 	chosen {
 		zmk,kscan = &kscan0;
-		zmk,physical-layout = &joric_jorne_full_layout;
-		// zmk,matrix_transform = &physical_layout0;
+		zmk,physical-layout = &physical_layout_0;
+		// zmk,matrix_transform = &default_transform;
 	};
 
 	default_transform: keymap_transform_0 {
