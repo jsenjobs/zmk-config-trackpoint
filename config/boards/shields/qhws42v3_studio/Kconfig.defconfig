@@ -3,7 +3,7 @@
 if SHIELD_QH_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "QHKB"
+    default "QHKB3S"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
