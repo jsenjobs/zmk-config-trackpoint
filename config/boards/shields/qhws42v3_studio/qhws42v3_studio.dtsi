@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "qhws42v3_studio-layouts.dtsi"
 
-&physical_layout0 {
+&qhkb_default_layout {
     transform = <&default_transform>;
 };
 
@@ -18,7 +18,7 @@
 / {
 	chosen {
 		zmk,kscan = &kscan0;
-		zmk,physical-layout = &physical_layout_0;
+		zmk,physical-layout = &qhkb_default_layout;
 		// zmk,matrix_transform = &default_transform;
 	};
 
