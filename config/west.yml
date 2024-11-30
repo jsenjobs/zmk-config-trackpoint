@@ -9,10 +9,15 @@ manifest:
     - name: jsenjobs
       url-base: https://github.com/jsenjobs
   projects:
+    # - name: zmk
+    #   path: zmk
+    #   remote: jsenjobs
+    #   revision: mouse_ps2_v2_scroll
+    #   import: app/west.yml
     - name: zmk
       path: zmk
-      remote: jsenjobs
-      revision: mouse_ps2_v2_scroll
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
     # - name: zmk
     #   remote: infused-kim
