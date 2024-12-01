@@ -13,15 +13,15 @@
 #
 ---
 include:
+  # - board: qhws42v3_nrf52840_left
+  #   shield: "qhws42v3studio_left"
+  #   snippet: studio-rpc-usb-uart
+  # - board: qhws42v3_nrf52840_right
+  #   shield: "qhws42v3studio_right"
   - board: qhws42v3_nrf52840_left
-    shield: "qhws42v3studio_left"
-    snippet: studio-rpc-usb-uart
+    shield: qhws42v3_left
   - board: qhws42v3_nrf52840_right
-    shield: "qhws42v3studio_right"
-  - board: qhws42v3_nrf52840_left
-    shield: "qhws42v3_left"
-  - board: qhws42v3_nrf52840_right
-    shield: "qhws42v3_right"
+    shield: qhws42v3_right
   # - board: qhws42v2_nrf52840_left
   #   shield: "qhws42v2_left"
   # - board: qhws42v2_nrf52840_right
@@ -29,4 +29,4 @@ include:
   # - board: qhws42v3_nrf52840_left
   #   shield: "settings_reset"
   - board: qhws42v3_nrf52840_right
-    shield: "settings_reset"
+    shield: settings_reset
