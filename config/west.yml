@@ -25,6 +25,7 @@ manifest:
     #   revision: mouse_ps2_v2_scroll
     #   import: app/west.yml
 
+    # merge zmk main (zmk studio)
     - name: zmk
       remote: jsenjobs
       revision: pr-testing/mouse_ps2_module_base
