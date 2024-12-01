@@ -202,7 +202,7 @@
             display-name = "SYS";
             bindings = <
                 &sys_reset          &bootloader     &none       &bt BT_PRV  &bt BT_NXT      &td_out_bt_clear            &td_out_bt_clear    &bt BT_PRV      &bt BT_NXT      &none       &bootloader     &sys_reset
-                &none               &none           &none       &none       &none           &none                       &none               &kp C_BRI_UP    &kp C_VOL_UP    &none       &none           &none
+                &none               &none           &none       &none       &none           &studio_unlock              &studio_unlock      &kp C_BRI_UP    &kp C_VOL_UP    &none       &none           &none
                 &ext_power EP_TOG   &kp C_SLEEP     &none       &none       &none           &none                       &none               &kp C_BRI_DN    &kp C_VOL_DN    &none       &kp C_SLEEP     &ext_power EP_TOG
                                                                 &none       &tog SYS  &none                       &none               &tog SYS  &none
             >;
@@ -229,6 +229,34 @@
             >;
         };
 #endif
+
+    extra1 {
+        status = "reserved";
+    };
+    extra2 {
+        status = "reserved";
+    };
+    extra3 {
+        status = "reserved";
+    };
+    extra4 {
+        status = "reserved";
+    };
+    extra5 {
+        status = "reserved";
+    };
+    extra6 {
+        status = "reserved";
+    };
+    extra7 {
+        status = "reserved";
+    };
+    extra8 {
+        status = "reserved";
+    };
+    extra9 {
+        status = "reserved";
+    };
 
   };
 
