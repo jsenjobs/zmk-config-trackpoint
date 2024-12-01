@@ -1,8 +1,8 @@
 # Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-config SHIELD_QH_LEFT
+config SHIELD_QH42V3S_LEFT
 	def_bool $(shields_list_contains,qhws42v3studio_left)
 
-config SHIELD_QH_RIGHT
+config SHIELD_QH42V3S_RIGHT
 	def_bool $(shields_list_contains,qhws42v3studio_right)
