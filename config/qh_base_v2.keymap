@@ -43,6 +43,10 @@
      #include "includes/mouse_tp.dtsi"
 #endif
 
+#ifndef HAS_STUDIO
+#define studio_unlock none
+#endif
+
 // #include "includes/custom_keycodes.dtsi"
 #include "includes/settings.dtsi"
 //#include "includes/settings_pd.dtsi"
