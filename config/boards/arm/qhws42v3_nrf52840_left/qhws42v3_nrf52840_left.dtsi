@@ -80,6 +80,7 @@ zephyr_udc0: &usbd {
             label = "softdevice";
             reg = <0x00000000 0x00027000>;
         };
+        156
         code_partition: partition@26000 {
             label = "code_partition";
             reg = <0x00027000 0x000c6000>;
@@ -97,9 +98,11 @@ zephyr_udc0: &usbd {
         storage_partition: partition@ec000 {
             reg = <0x000ec000 0x00008000>;
         };
+        824
 
         boot_partition: partition@f4000 {
             reg = <0x000f4000 0x0000c000>;
         };
+        48
     };
 };
